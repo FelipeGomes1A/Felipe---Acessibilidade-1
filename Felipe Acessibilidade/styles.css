@@ -1,37 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
-
 :root {
     --laranja-claro: #FF862A;
     --alto-contraste-fundo: #000000;
     --alto-contraste-texto: #ffffff;
     --alto-contraste-link: #ffd700;
+    --azul-claro: #A7D8FF; /* Azul Claro */
+    --azul-escuro: #1E3A8A; /* Azul Escuro */
+    --cinza-claro: #D1D5DB; /* Cinza Claro */
+    --cinza-escuro: #4B5563; /* Cinza Escuro */
+    --amarelo-claro: #F7D060; /* Amarelo Claro */
+    --roxo-claro: #D6A7E2; /* Roxo Claro */
+    --roxo-escuro: #6B21A8; /* Roxo Escuro */
 }
 
 body {
     font-size: 1rem;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F1F1F1; /* Fundo suave para o corpo */
 }
 
 header {
-    background-color: #ffffff;
+    background-color: #ffffff; /* Mantém o header branco */
 }
-
-
-section {
-    padding-bottom: 5rem;
-}
-
 
 .nav-link {
-    color: #CB6D43;
+    color: var(--azul-escuro); /* Substituído o laranja por azul escuro */
     font-weight: 600;
 }
 
 .inicio-fundo {
-    /* aula 3 */
     background-image: url('img/4965007.jpg');
-    /* Substitua pelo caminho da sua imagem */
     background-size: cover;
     background-position: right;
     border-radius: 80px;
@@ -39,9 +36,9 @@ section {
     height: 606px;
     padding: 40px;
     margin: 0 auto;
+    background-color: var(--azul-claro); /* Azul suave como fundo */
 }
 
-/* posicionamento para a imagem à direita */
 .img-inicio {
     position: absolute;
     right: 0;
@@ -50,29 +47,17 @@ section {
     height: auto;
 }
 
-
-.esquerda-conteudo {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-}
-
-
 .botao-inicio {
-    background-color: var(--laranja-claro);
+    background-color: var(--amarelo-claro); /* Amarelo suave para botões */
     border-radius: 30px;
     border: none;
     width: 14em;
     height: 3em;
-    align-content: center;
-
 }
 
 .display-4 {
     text-shadow: -5px 5px var(--laranja-claro);
 }
-
 
 #tropicalia {
     position: relative;
@@ -82,29 +67,18 @@ section {
     background: url('img/flor.png') top right no-repeat,
         url('img/flor-esquerda.png') bottom left no-repeat;
     background-size: 180px 180px;
-    /* Ajuste o tamanho conforme necessário */
+    background-color: var(--roxo-claro); /* Alterado para roxo claro */
 }
-
-#tropicalia .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    z-index: 1;
-    /* Garante que o conteúdo fica acima das imagens do background */
-}
-
 
 h2 {
     font-family: 'Lemon', serif;
     font-size: 2.5em;
     font-style: normal;
-    color: var(--laranja-claro);
+    color: var(--azul-escuro); /* Azul escuro para os títulos */
 }
 
 #galeria {
     background-color: #FAF4F4;
-
 }
 
 .fundo-galeria {
@@ -116,30 +90,28 @@ h2 {
     background-image: url('img/4965007.jpg');
     background-size: cover;
     padding: 4rem 0;
-    /* Espaçamento interno para a seção de contato */
-
+    background-color: var(--roxo-claro); /* Fundo roxo claro para a seção de contato */
 }
 
 .formulario {
     background-color: #ffffff;
     padding: 2rem;
-    /* Espaçamento interno dentro do formulário */
     border-radius: 10px;
-    /* Borda arredondada para o formulário */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    /* Sombra suave para destacar o formulário */
     font-weight: bold;
+    background-color: var(--cinza-claro); /* Fundo do formulário em cinza claro */
 }
 
 .formulario button {
-    background-color: #CB6D43;
+    background-color: var(--azul-escuro); /* Azul escuro para botões */
     border: none;
     font-weight: bold;
 }
 
 .form-control {
-    background-color: #F1EDEF;
+    background-color: var(--cinza-claro); /* Caixa de texto com fundo cinza claro */
 }
+
 .menu-acessibilidade{
     position: fixed;
     top:2rem;
@@ -158,9 +130,6 @@ h2 {
     flex-direction: column;
 }
 
-.opcoes-acessibilidade button{
-    margin-bottom: 5px;
-}
 .apresenta-lista{
     display: none;
 }
